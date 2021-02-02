@@ -1,0 +1,4 @@
+*.spec.*
+*.test.*
+src/tests/**
+src/tests/*
