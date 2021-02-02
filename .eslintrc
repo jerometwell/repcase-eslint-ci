@@ -1,0 +1,47 @@
+{
+  "extends": [
+    "airbnb-typescript"
+  ],
+  "plugins": [
+    "mocha",
+    "chai-expect"
+  ],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "mocha": true
+  },
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "next"
+      }
+    ],
+    "import/no-cycle": 0,
+    "no-restricted-syntax": 0,
+    "no-await-in-loop": 0,
+    "no-continue": 0,
+    "no-plusplus": 0,
+    "no-console": [0, { "files": ["run.js"] }],
+    "no-multi-spaces": 0,
+    "no-multiple-empty-lines": 0,
+    "max-len": 0,
+    "space-in-parens": 0,
+    "@typescript-eslint/quotes": 0
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.{js,ts}"
+      ],
+      "excludedFiles": [
+        "*.test.*",
+        "*.spec.*"
+      ],
+    }
+  ]
+}
